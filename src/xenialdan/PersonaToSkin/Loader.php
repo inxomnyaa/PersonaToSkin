@@ -27,13 +27,11 @@ class Loader extends PluginBase
         // Skins
         if ($this->customSkins()) $skinPaths = glob($this->getDataFolder() . "*.png");
         if (!$this->customSkins() || empty($skinPaths)) {
-            #$this->getLogger()->notice("NOT CUSTOM");
             $this->saveResource("steve.png");
             $skinPaths = glob($this->getDataFolder() . "steve.png");
         }
         if (is_array($skinPaths)) {
             foreach ($skinPaths as $id => $skinPath) {
-                var_dump($skinPath);
                 set_error_handler(function ($errno, $errstr, $errfile, $errline) use ($skinPath) {
                     $this->getLogger()->warning("Skin " . basename($skinPath) . " could not be loaded. Error: #$errno - $errstr");
                 });
