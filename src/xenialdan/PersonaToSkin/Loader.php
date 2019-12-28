@@ -50,16 +50,6 @@ class Loader extends PluginBase
     }
 
     /**
-     * @throws \pocketmine\plugin\PluginException
-     */
-    public function onEnable()
-    {
-        //events
-        #$this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
-
-    }
-
-    /**
      * Returns an instance of the plugin
      * @return Loader
      */
