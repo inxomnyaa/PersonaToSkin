@@ -3,5 +3,5 @@ main: xenialdan\PersonaToSkin\Loader
 version: 0.0.1
 api: ["3.11"]
 load: POSTWORLD
-authors: [XenialDan]
+authors: [XenialDan,DenielWorld]
 extensions: ['gd']
