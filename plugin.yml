@@ -1,0 +1,9 @@
+name: PersonaToSkin
+main: xenialdan\PersonaToSkin\Loader
+version: 0.0.0
+api: [3.11]
+load: POSTWORLD
+authors: [XenialDan]
+extensions: ['gd']
+#TODO remove!
+soft-depend: DEVirion

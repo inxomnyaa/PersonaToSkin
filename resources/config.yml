@@ -1,0 +1,4 @@
+---
+# If you would like to apply a random skin from the plugin's skin folder. If set to false, Steve is used
+custom-skin: false
+...
